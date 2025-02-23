@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+}
+
+/*animation*/
+
+/* entry animations*/
+
+@keyframes entry {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*grid---*/
+
+.grid-container {
+    display: grid;
+    padding:15px;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    column-gap: 20px;
+    row-gap: 20px;
+    height:100vh;
+    width:100%;
+    background-color: #0F0E49;
+}
+
+
+
+.grid-item-1{
+    border-radius: 20px;
+    background: #95cd7c;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    opacity: 0; 
+    animation: entry 1s ease-in-out forwards; 
+    animation-delay: 0.1s;
+}
+
+.grid-item-2{
+    border-radius: 20px;
+    background: #70cdff;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    opacity: 0; 
+    animation: entry 1s ease-in-out forwards; 
+    animation-delay: 0.2s;
+}
+.grid-item-3{
+    border-radius: 20px;
+    background: #63974d;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    opacity: 0; 
+    animation: entry 1s ease-in-out forwards; 
+    animation-delay: 0.3s;
+}
+.grid-item-4{
+    border-radius: 20px;
+    background: #27481a;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-items: center;
+    opacity: 0; 
+    animation: entry 1s ease-in-out forwards;  
+}
+.grid-item-5{
+    border-radius: 20px;
+    background: #95cd7c;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    opacity: 0; 
+    animation: entry 1s ease-in-out forwards; 
+    animation-delay: 0.5s;
+}
+.grid-item-6{
+    border-radius: 20px;
+    background: #70cdff;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    opacity: 0; 
+    animation: entry 1s ease-in-out forwards; 
+    animation-delay: 0.6s;
+}
+.grid-item-7{
+    border-radius: 20px;
+    background: #d5ffc2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    opacity: 0; 
+    animation: entry 1s ease-in-out forwards; 
+    animation-delay: 0.7s;
+}
+
+/*-----*/
+
+.heading-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 230px;
+    background-color: #fffbef;
+    border-radius:5px;
+    margin-top:7%;
+    margin-bottom:10px;
+}
+
+#heading{
+    color: #54b8ee;
+    font-size: 2.5rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+    margin-right:30px;
+    margin-left:35px; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .03em; /* Adjust as needed */
+    width: 8ch; /* Adjust this value to match the length of your text */
+    animation: 
+      typing 2.0s steps(30, end);
+}
+
+#heading-text2{
+    color: #b2e4ff;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .03em; /* Adjust as needed */
+    animation: 
+      typing 2.0s steps(30, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+/* palindrome project */
+#palindrome-project-desc{
+    font-size:14px;
+}
+
+.project-palindrome-text{
+    margin-left:10px;
+    margin-top:28px;
+    margin-right:17px;
+}
+
+#palindrome-project-img{
+    height:160px;
+    margin:10px;
+    margin-top:27px;
+    border-radius: 18px;
+    margin-left:19px;
+}
+
+.project-palindrome-content{
+    display: flex;
+}
+
+.project-heading-palindrome{
+    font-size:20px;
+    text-decoration: underline;
+}
+
+a{
+    color:black;
+    font-weight: bold;
+}
+a:hover{
+    cursor:pointer;
+}
+a:focus{
+    color:white;
+}
+
+/*reg form project*/
+#project-regForm-desc{
+    font-size:14px;
+}
+
+.project-regForm-text{
+    margin-left:10px;
+    margin-top:25px;
+    margin-right:17px;
+}
+
+#project-regForm-img{
+    height:160px;
+    margin:10px;
+    margin-top:27px;
+    border-radius: 18px;
+    margin-left:19px;
+}
+
+.project-regForm-content{
+    display: flex;
+}
+
+.project-regForm-heading{
+    font-size:20px;
+    text-decoration: underline;
+}
+

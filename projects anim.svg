@@ -1,0 +1,26 @@
+<svg width="290" height="244" viewBox="0 0 290 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 2">
+<rect id="Rectangle 35" x="4.5" y="26.5" width="280" height="190" rx="9.5" fill="#EFE9AE" stroke="black"/>
+<path id="Rectangle 36" d="M4.5 36C4.5 30.7533 8.75329 26.5 14 26.5H275C280.247 26.5 284.5 30.7533 284.5 36V46.5H4.5V36Z" fill="#361B0D" stroke="black"/>
+<rect id="Rectangle 37" x="12.5" y="56.5" width="80" height="65" fill="#C0E9FF" stroke="black"/>
+<path id="Rectangle 38" d="M262.5 46.5H284.5V207C284.5 212.247 280.247 216.5 275 216.5H262.5V46.5Z" fill="#FFAC81" stroke="black"/>
+<rect id="Rectangle 39" x="13.5" y="132.5" width="240" height="73" fill="#FFAC81" stroke="black"/>
+<rect id="bars1" x="99.5" y="58.5" width="74" height="12" fill="#A9D495" stroke="black"/>
+<rect id="bars2" x="99.5" y="82.5" width="144" height="12" fill="#A9D495" stroke="black"/>
+<rect id="bars3" x="99.5" y="106.5" width="107" height="12" fill="#A9D495" stroke="black"/>
+<rect id="Rectangle 43" x="264.5" y="48.5" width="18" height="13" fill="#C0E9FF" stroke="black"/>
+<path id="Rectangle 44" d="M264.5 201.5H282.5V205C282.5 210.247 278.247 214.5 273 214.5H264.5V201.5Z" fill="#C0E9FF" stroke="black"/>
+<path id="Polygon 1" d="M268.001 59L274 49.9079L279.999 59H268.001Z" fill="#361B0D" stroke="black"/>
+<path id="Polygon 2" d="M268.001 204L274 213.092L279.999 204H268.001Z" fill="#361B0D" stroke="black"/>
+<rect id="scroller" x="264.5" y="82.5" width="18" height="80" fill="#C0E9FF" stroke="black"/>
+<rect id="Rectangle 45" x="214.5" y="29.5" width="21" height="14" fill="#C0E9FF" stroke="black"/>
+<path id="Rectangle 46" d="M260.5 29.5H276C279.038 29.5 281.5 31.9624 281.5 35V43.5H260.5V29.5Z" fill="#C0E9FF" stroke="black"/>
+<rect id="Rectangle 47" x="237.5" y="29.5" width="21" height="14" fill="#C0E9FF" stroke="black"/>
+<line id="Line 1" x1="217.982" y1="36.3" x2="232.018" y2="36.3" stroke="black" stroke-width="2.4"/>
+<g id="cross">
+<line id="Line 2" x1="267.947" y1="32.2633" x2="274.947" y2="41.2633" stroke="black" stroke-width="2.4"/>
+<line id="Line 3" y1="-1.2" x2="11.4018" y2="-1.2" transform="matrix(-0.613941 0.789352 0.789352 0.613941 276 33)" stroke="black" stroke-width="2.4"/>
+</g>
+<rect id="Rectangle 48" x="243" y="33" width="10" height="7" stroke="black" stroke-width="2"/>
+</g>
+</svg>
