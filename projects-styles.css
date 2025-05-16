@@ -227,7 +227,7 @@ a:hover{
     text-decoration: underline;
 }
 
-/* palindrome project */
+/* whackamole project */
 #whackamole-project-desc{
     font-size:16px;
 }
@@ -256,5 +256,37 @@ a:hover{
     font-size:24px;
     text-decoration: underline;
 }
+
+/* roman numeral project*/
+#project-romanNumeral-desc{
+    font-size:14px;
+}
+
+.project-romanNumeral-text{
+    margin-left:10px;
+    margin-top:25px;
+    margin-right:17px;
+}
+
+#project-romanNumeral-img{
+    height:170px;
+    width: 40%;
+    margin:10px;
+    margin-top:27px;
+    border-radius: 18px;
+    margin-left:15px;
+}
+
+.project-romanNumeral-content{
+    display: flex;
+}
+
+.project-romanNumeral-heading{
+    font-size:18px;
+    text-decoration: underline;
+}
+
+
+
 
 
