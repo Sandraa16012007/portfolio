@@ -196,9 +196,7 @@ a{
 }
 a:hover{
     cursor:pointer;
-}
-a:focus{
-    color:white;
+    background-color: aliceblue;
 }
 
 /*reg form project*/
