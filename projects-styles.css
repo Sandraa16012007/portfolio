@@ -229,3 +229,34 @@ a:focus{
     text-decoration: underline;
 }
 
+/* palindrome project */
+#whackamole-project-desc{
+    font-size:16px;
+}
+
+.project-whackamole-text{
+    margin-left:25px;
+    margin-top:25px;
+    margin-right:20px;
+}
+
+#whackamole-project-img{
+    height:200px;
+    width:90%;
+    margin:10px;
+    margin-top:27px;
+    border-radius: 18px;
+    margin-left:21px;
+}
+
+.project-whackamole-content{
+   display:flex;
+   flex-direction:column;
+}
+
+.project-heading-whackamole{
+    font-size:24px;
+    text-decoration: underline;
+}
+
+
