@@ -227,18 +227,18 @@ a:hover{
     text-decoration: underline;
 }
 
-/* whackamole project */
-#whackamole-project-desc{
+/* recip project */
+#recip-project-desc{
     font-size:16px;
 }
 
-.project-whackamole-text{
+.project-recip-text{
     margin-left:25px;
     margin-top:25px;
     margin-right:20px;
 }
 
-#whackamole-project-img{
+#recip-project-img{
     height:200px;
     width:90%;
     margin:10px;
@@ -247,12 +247,12 @@ a:hover{
     margin-left:21px;
 }
 
-.project-whackamole-content{
+.project-recip-content{
    display:flex;
    flex-direction:column;
 }
 
-.project-heading-whackamole{
+.project-heading-recip{
     font-size:24px;
     text-decoration: underline;
 }
@@ -286,7 +286,35 @@ a:hover{
     text-decoration: underline;
 }
 
+/* whackamole project*/
 
+#whackamole-project-desc{
+   font-size:16px;
+}
+
+.project-whackamole-text{
+    margin-left:10px;
+    margin-top:25px;
+    margin-right:17px;
+}
+
+#whackamole-project-img{
+    height:170px;
+    width: 40%;
+    margin:10px;
+    margin-top:27px;
+    border-radius: 18px;
+    margin-left:15px;
+}
+
+.project-whackamole-content{
+   display:flex;
+}
+
+.project-heading-whackamole{
+    font-size:18px;
+    text-decoration: underline;
+}
 
 
 
