@@ -248,6 +248,35 @@ a:hover {
     text-decoration: underline;
 }
 
+/*connected project*/
+#project-connected-desc {
+    font-size: 14px;
+}
+
+.project-connected-text {
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-right: 17px;
+}
+
+#project-connected-img {
+    height: 160px;
+    margin: 10px;
+    margin-top: 27px;
+    border-radius: 18px;
+    margin-left: 19px;
+}
+
+.project-connected-content {
+    display: flex;
+}
+
+.project-connected-heading {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+
 /* recip project */
 #recip-project-desc {
     font-size: 16px;
