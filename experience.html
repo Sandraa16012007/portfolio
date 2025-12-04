@@ -1,37 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, intial-scale=1">
-        <link rel="stylesheet" href="styles/experience.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Geist+Mono:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
-        <title>Sandra's Experience</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel ="stylesheet" href="styles/experience.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Sandra's Experience</title>
+</head>
+<body>
+    <div class="decorative-elements">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+    </div>
 
-    <body>
+    <div class="page-header">
+        <h1>Experience</h1>
+    </div>
 
-        <div class="experience-content">
-
-            <h1 id="experience-heading">Experience</h1>
-
-            <div class="content-boxes">
-
-                <div class="box1">
-                    <h2 id="box1-heading">Web Development Team Member</h2>
-                    <p id="box1-paragraph">At Microsoft Student Chapter - MSIT</p>
+    <div class="experience-container">
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="card-header">
+                    <div class="card-icon">💼</div>
+                    <span class="card-date">Oct 2025 - Present</span>
                 </div>
-
-                <div class="box2">
-                    <h2 id="box2-heading">Competing, Learning and Growing</h2>
-                    <p id="box2-paragraph">Participated and won in hackathons, ideathons and technical competitions.</p>
-                </div>
-
+                <h2>UI/UX Design Intern</h2>
+                <h3>SmaranAI.in</h3>
+                <ul>
+                    <li>Designed and developed user interfaces for web screens, focusing on enhancing usability and visual appeal</li>
+                    <li>Collaborated with team to refine user flows, design consistency, and UI/UX improvements</li>
+                </ul>
             </div>
 
+            <div class="experience-card">
+                <div class="card-header">
+                    <div class="card-icon">💻</div>
+                    <span class="card-date">Oct 2024 - Present</span>
+                </div>
+                <h2>Web Development Team Member</h2>
+                <h3>Microsoft Student Chapter - MSIT</h3>
+                <ul>
+                    <li>Built and contributed to web projects, applying responsive design principles to create user-friendly layouts</li>
+                    <li>Collaborated with peers to strengthen coding culture through workshops, coding challenges, and mentoring sessions</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="card-header">
+                    <div class="card-icon">🎯</div>
+                    <span class="card-date">Ongoing</span>
+                </div>
+                <h2>Competing, Learning and Growing</h2>
+                <h3>Hackathons & Technical Competitions</h3>
+                <p>Actively participating and winning in hackathons, ideathons, and technical competitions. Building real-world projects and solving problems while learning new technologies and collaborating with talented developers.</p>
+            </div>
         </div>
 
-    </body>
+        <div class="achievements-section">
+            <h2 class="section-title">Achievements & Highlights</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>Qualified National SIH Hackathon</h3>
+                    <p>Qualified internal college round of the national-level Smart India Hackathon, competing among top teams</p>
+                </div>
 
+                <div class="achievement-card">
+                    <h3>Top 2nd Contributor - Commit and Conquer 2025</h3>
+                    <p>Secured 2nd position in the open source contribution event at IGDTUW, Delhi</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Finalists - HackShastra 2025</h3>
+                    <p>Qualified in the Top 35 out of 1100+ teams across India in HackShastra 2025</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>2nd Place - MicroQuest at BVEST XI</h3>
+                    <p>Won 2nd place in MicroQuest competition at BVEST XI - BVCOE's Tech Fest</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>2nd Place - TechPulse at Avensis'25</h3>
+                    <p>Won 2nd place in TechPulse competition at Avensis'25 - MSIT's Tech Fest</p>
+                </div>
+
+                <div class="achievement-card">
+                    <h3>Active in Hackathons & Competitions</h3>
+                    <p>Regular participant in various hackathons, continuously learning and building innovative solutions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll-based animation observer
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and titles
+        document.querySelectorAll('.experience-card, .achievement-card, .section-title').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Staggered animation for cards
+        const experienceCards = document.querySelectorAll('.experience-card');
+        experienceCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.15}s`;
+        });
+
+        const achievementCards = document.querySelectorAll('.achievement-card');
+        achievementCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        // Parallax effect for floating shapes
+        document.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const shapes = document.querySelectorAll('.floating-shape');
+            shapes.forEach((shape, index) => {
+                const speed = (index + 1) * 0.15;
+                shape.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+</body>
 </html>
