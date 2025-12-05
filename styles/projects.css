@@ -19,6 +19,34 @@ body {
     animation: fadeInDown 1s ease-out;
 }
 
+#back-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 12px 20px;
+    width: fit-content;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+#back-button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
 .title-container {
     display: inline-block;
     background: linear-gradient(135deg, #396128 0%, #578442 100%);
@@ -38,7 +66,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-    
+
 }
 
 .subtitle {

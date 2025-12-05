@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,16 @@
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <!-- Skills Title Card -->
         <div class="card skills-title">
+            <button id="back-button"><a href="index.html">← Back</a></button>
             <div class="card-header">Skills</div>
             <button id="view-projects"><a href="projects.html">View Projects →</a></button>
 
@@ -62,7 +67,8 @@
                 <span class="skill-tag">Creative Writing</span>
                 <span class="skill-tag">Documentation</span>
             </div>
-            <a href="https://drive.google.com/drive/folders/1RikExh_a27U5P4F5BmoNVpF24VarzgAn?usp=drive_link" target="_blank" class="portfolio-btn">
+            <a href="https://drive.google.com/drive/folders/1RikExh_a27U5P4F5BmoNVpF24VarzgAn?usp=drive_link"
+                target="_blank" class="portfolio-btn">
                 View My Writing →
             </a>
         </div>
@@ -71,9 +77,9 @@
 
     <script>
         // Animate cards on load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const cards = document.querySelectorAll('.card');
-            
+
             // Add animate class to trigger animations
             cards.forEach((card, index) => {
                 setTimeout(() => {
@@ -84,21 +90,21 @@
             // Add hover effects for skill squares
             const skillSquares = document.querySelectorAll('.skill-square');
             skillSquares.forEach(square => {
-                square.addEventListener('mouseenter', function() {
+                square.addEventListener('mouseenter', function () {
                     this.style.animationDuration = '0.5s';
                 });
-                
-                square.addEventListener('mouseleave', function() {
+
+                square.addEventListener('mouseleave', function () {
                     this.style.animationDuration = '3s';
                 });
             });
 
 
             // Parallax effect on mouse move
-            document.addEventListener('mousemove', function(e) {
+            document.addEventListener('mousemove', function (e) {
                 const mouseX = e.clientX / window.innerWidth;
                 const mouseY = e.clientY / window.innerHeight;
-                
+
                 const decorativeElements = document.querySelectorAll('.decorative-elements > *');
                 decorativeElements.forEach((element, index) => {
                     const speed = (index + 1) * 0.5;
@@ -114,7 +120,7 @@
                 rootMargin: '0px 0px -50px 0px'
             };
 
-            const observer = new IntersectionObserver(function(entries) {
+            const observer = new IntersectionObserver(function (entries) {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = '1';
@@ -131,4 +137,5 @@
 
     </script>
 </body>
+
 </html>
