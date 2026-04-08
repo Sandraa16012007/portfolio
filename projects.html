@@ -1,159 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel ="stylesheet" href="styles/projects.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/projects-tags.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Sandra's Projects</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Floating Background Shapes -->
     <div class="floating-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
     </div>
 
     <!-- Header Section -->
     <div id="back-button"><a href="index.html">← Back</a></div>
     <div class="header-section">
-        <div class="title-container">
-            <h1>Projects</h1>
-            <p class="subtitle">Here are a few personal projects...</p>
-        </div>
+      <div class="title-container">
+        <h1>Projects</h1>
+        <p class="subtitle">Here are a few personal projects...</p>
+      </div>
     </div>
 
     <!-- Projects Grid -->
     <div class="projects-grid">
 
-        <!-- Project 1: BloodBond -->
-        <div class="project-card">
-            <img src="images/bloodbond-img.png" alt="BloodBond" class="project-image">
-            <div class="project-content">
-                <h2 class="project-title">
-                    <a href="https://sandraa16012007.github.io/BloodBond/" target="_blank">
-                        BloodBond
-                    </a>
-                </h2>
-                <p class="project-description">
-                    BloodBond is a web app that connects blood donors with those in urgent need using real-time location. 
-                    It enables quick donor availability updates, secure authentication, and instant notifications, promoting life-saving connections 
-                    through a simple and efficient interface.
-                </p>
-            </div>
+      <div class="project-card">
+        <img
+          src="images/skinsync-img.png"
+          alt="SkinSync"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a href="https://skin-sync-orcin.vercel.app/" target="_blank">
+              SkinSync <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            SkinSync is a privacy-first, AI-powered skincare scanner that
+            analyzes product ingredients and provides personalized insights
+            based on your skin type, sensitivities, and history. Built with a
+            local-first architecture, the app minimizes backend dependency while
+            delivering fast, intelligent results using OCR + LLM.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-react">React</span>
+            <span class="tag tag-tailwind">Tailwind CSS</span>
+            <span class="tag tag-ai">Runanywhere SDK</span>
+          </div>
         </div>
+      </div>
 
-        <!-- Project 2: Edubot AI -->
-        <div class="project-card">
-            <img src="images/edubot-img.png" alt="Edubot AI" class="project-image">
-            <div class="project-content">
-                <h2 class="project-title">
-                    <a href="https://edubotai.up.railway.app/" target="_blank">
-                        Edubot AI
-                    </a>
-                </h2>
-                <p class="project-description">
-                    EduBot AI is a multi-agent system designed to automate study planning.
-                    It transforms raw syllabi into structured day-wise plans, generates concise notes, curates high-quality resources, 
-                    and tracks progress — all in under 30 seconds.
-                </p>
-            </div>
+      <div class="project-card">
+        <img
+          src="images/policysense-img.png"
+          alt="PolicySense"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a href="https://policysense-yb5h.vercel.app/" target="_blank">
+              PolicySense <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            PolicySense is an AI-native personalization layer designed to transform unstructured business and policy news into actionable,
+            decision-ready intelligence using a multi-agentic AI system for automated analysis and recommendation based on the user profile.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-next">Next.js</span>
+            <span class="tag tag-ts">TypeScript</span>
+            <span class="tag tag-tailwind">Tailwind CSS</span>
+            <span class="tag tag-python">Gemini API</span>
+            <span class="tag tag-firebase">Firebase</span>
+          </div>
         </div>
+      </div>
 
-        <!-- Project 3: ReciP -->
-        <div class="project-card">
-            <img src="images/recip-img.png" alt="ReciP website" class="project-image">
-            <div class="project-content">
-                <h2 class="project-title">
-                    <a href="https://sandraa16012007.github.io/ReciP/" target="_blank">
-                        ReciP - Your AI Sous Chef
-                    </a>
-                </h2>
-                <p class="project-description">
-                    ReciP is an AI-powered recipe assistant that reduces food waste by detecting ingredients from
-                    leftover meals, groceries, or fridge images using Hugging Face computer vision models, and a simple
-                    HTML, CSS, and JavaScript frontend to generate sustainable recipes from detected ingredients.
-                </p>
-            </div>
+      <!-- Project 1: BloodBond -->
+      <div class="project-card">
+        <img
+          src="images/bloodbond-img.png"
+          alt="BloodBond"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a
+              href="https://sandraa16012007.github.io/BloodBond/"
+              target="_blank"
+            >
+              BloodBond <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            BloodBond is a web app that connects blood donors with those in
+            urgent need using real-time location. It enables quick donor
+            availability updates, secure authentication, and instant
+            notifications, promoting life-saving connections through a simple
+            and efficient interface.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-css">CSS</span>
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-firebase">Firebase</span>
+          </div>
         </div>
+      </div>
 
-        <!-- Project 4: ConnectED -->
-        <div class="project-card">
-            <img src="images/connected-img.png" alt="ConnectED" class="project-image">
-            <div class="project-content">
-                <h2 class="project-title">
-                    <a href="https://connected1601.netlify.app/" target="_blank">
-                        ConnectED 
-                    </a>
-                </h2>
-                <p class="project-description">
-                    ConnectED is a simple yet impactful web platform designed to allow students to seek guidance,
-                    connect with mentors, explore alumni success stories, and stay updated on events and meetups. The
-                    platform focuses on ease of use, structured navigation, and purposeful interactions.
-                </p>
-            </div>
+      <!-- Project 2: Edubot AI -->
+      <div class="project-card">
+        <img
+          src="images/edubot-img.png"
+          alt="Edubot AI"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a href="https://edubotai.up.railway.app/" target="_blank">
+              Edubot AI <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            EduBot AI is a multi-agent system designed to automate study
+            planning. It transforms raw syllabi into structured day-wise plans,
+            generates concise notes, curates high-quality resources, and tracks
+            progress — all in under 30 seconds.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-python">Python</span>
+            <span class="tag tag-ai">Gemini API</span>
+            <span class="tag tag-js">Javascript</span>
+          </div>
         </div>
+      </div>
 
-        <!-- Project 5: Whack-a-mole -->
-        <div class="project-card">
-            <img src="images/whackamole-img.png" alt="Whack-a-mole Game" class="project-image">
-            <div class="project-content">
-                <h2 class="project-title">
-                    <a href="https://sandraa16012007.github.io/whack-a-mole-game/" target="_blank">
-                        Whack-a-mole Game
-                    </a>
-                </h2>
-                <p class="project-description">
-                    This Whack-a-Mole game, built using HTML, CSS, and JavaScript, offers vibrant graphics and lively
-                    sound effects for an engaging experience. Moles appear randomly from holes, testing your reflexes as
-                    you try to whack them and earn high scores.
-                </p>
-            </div>
+      <!-- Project 3: ReciP -->
+      <div class="project-card">
+        <img
+          src="images/recip-img.png"
+          alt="ReciP website"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a href="https://sandraa16012007.github.io/ReciP/" target="_blank">
+              ReciP — Your AI Sous Chef <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            ReciP is an AI-powered recipe assistant that reduces food waste by
+            detecting ingredients from leftover meals, groceries, or fridge
+            images using Hugging Face computer vision models, and a simple HTML,
+            CSS, and JavaScript frontend to generate sustainable recipes from
+            detected ingredients.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-css">CSS</span>
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-ai">HuggingFace</span>
+          </div>
         </div>
+      </div>
 
-
-        <!-- Project 6: Tourzy -->
-        <div class="project-card">
-            <img src="images/tourzy-img.png" alt="Tourzy" class="project-image">
-            <div class="project-content">
-                <h2 class="project-title">
-                    <a href="https://tourzy.netlify.app/" target="_blank">
-                        Tourzy
-                    </a>
-                </h2>
-                <p class="project-description">
-                    Tourzy is a visually appealing travel blog designed to captivate users with stunning
-                    imagery and engaging content. Built using React and CSS, it offers a seamless user experience,
-                    encouraging visitors to explore travel options and book their next adventure.
-                </p>
-            </div>
+      <!-- Project 4: ConnectED -->
+      <div class="project-card">
+        <img
+          src="images/connected-img.png"
+          alt="ConnectED"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a href="https://connected1601.netlify.app/" target="_blank">
+              ConnectED <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            ConnectED is a simple yet impactful web platform designed to allow
+            students to seek guidance, connect with mentors, explore alumni
+            success stories, and stay updated on events and meetups. The
+            platform focuses on ease of use, structured navigation, and
+            purposeful interactions.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-css">CSS</span>
+            <span class="tag tag-js">JavaScript</span>
+          </div>
         </div>
+      </div>
 
+      <!-- Project 5: Whack-a-mole -->
+      <div class="project-card">
+        <img
+          src="images/whackamole-img.png"
+          alt="Whack-a-mole Game"
+          class="project-image"
+        />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a
+              href="https://sandraa16012007.github.io/whack-a-mole-game/"
+              target="_blank"
+            >
+              Whack-a-mole Game <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            This Whack-a-Mole game, built using HTML, CSS, and JavaScript,
+            offers vibrant graphics and lively sound effects for an engaging
+            experience. Moles appear randomly from holes, testing your reflexes
+            as you try to whack them and earn high scores.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-css">CSS</span>
+            <span class="tag tag-js">JavaScript</span>
+          </div>
+        </div>
+      </div>
 
-        <!-- TO ADD A NEW PROJECT: Copy this template and paste below -->
-        <!--
+      <!-- Project 6: Tourzy -->
+      <div class="project-card">
+        <img src="images/tourzy-img.png" alt="Tourzy" class="project-image" />
+        <div class="project-content">
+          <h2 class="project-title">
+            <a href="https://tourzy.netlify.app/" target="_blank">
+              Tourzy <span class="link-arrow">↗</span>
+            </a>
+          </h2>
+          <p class="project-description">
+            Tourzy is a visually appealing travel blog designed to captivate
+            users with stunning imagery and engaging content. Built using React
+            and CSS, it offers a seamless user experience, encouraging visitors
+            to explore travel options and book their next adventure.
+          </p>
+          <div class="tech-tags">
+            <span class="tag tag-react">React</span>
+            <span class="tag tag-css">CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TO ADD A NEW PROJECT: Copy this template and paste below -->
+      <!--
         <div class="project-card">
             <img src="YOUR-IMAGE.png" alt="Project Name" class="project-image">
             <div class="project-content">
                 <h2 class="project-title">
                     <a href="YOUR-PROJECT-URL" target="_blank">
-                        Your Project Title
+                        Your Project Title <span class="link-arrow">↗</span>
                     </a>
                 </h2>
                 <p class="project-description">
                     Your project description goes here...
                 </p>
+                <div class="tech-tags">
+                    <span class="tag tag-html">HTML</span>
+                    <span class="tag tag-css">CSS</span>
+                    <span class="tag tag-js">JavaScript</span>
+                </div>
             </div>
         </div>
         -->
-
     </div>
-</body>
-
+  </body>
 </html>

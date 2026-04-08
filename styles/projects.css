@@ -329,3 +329,139 @@ body {
         height: 180px;
     }
 }
+
+/* =============================================
+   projects-tags.css
+   Add-on styles: link arrow + tech stack tags
+   Link in your HTML after projects.css:
+   <link rel="stylesheet" href="styles/projects-tags.css" />
+   ============================================= */
+
+/* --- Link Arrow --- */
+
+.project-title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.link-arrow {
+  display: inline-block;
+  font-size: 0.75em;
+  opacity: 1;
+  transition: transform 0.2s ease;
+}
+
+.project-title a:hover .link-arrow {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* --- Tech Tags Container --- */
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+/* --- Base Tag Style --- */
+
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+/* --- Individual Tag Colors --- */
+
+/* HTML — orange */
+.tag-html {
+  background-color: #fff0e6;
+  color: #b84a00;
+  border: 1px solid #f9c49a;
+}
+
+/* CSS — blue */
+.tag-css {
+  background-color: #e6f0ff;
+  color: #1a56cc;
+  border: 1px solid #a8c4f8;
+}
+
+/* JavaScript — yellow */
+.tag-js {
+  background-color: #fffbe6;
+  color: #8a6600;
+  border: 1px solid #f5d96b;
+}
+
+/* React — cyan */
+.tag-react {
+  background-color: #e2f8fc;
+  color: #0a7285;
+  border: 1px solid #7fd7e8;
+}
+
+/* Next.js — dark/charcoal */
+.tag-next {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  border: 1px solid #c2c2c2;
+}
+
+/* Python — green */
+.tag-python {
+  background-color: #eaf6e8;
+  color: #2a6e1f;
+  border: 1px solid #98d68e;
+}
+
+/* Node.js — green (darker shade) */
+.tag-node {
+  background-color: #e8f5e2;
+  color: #2d5e18;
+  border: 1px solid #8ecb7c;
+}
+
+/* Firebase — amber */
+.tag-firebase {
+  background-color: #fff7e0;
+  color: #8a5a00;
+  border: 1px solid #f5c84a;
+}
+
+/* AI / LLM — purple */
+.tag-ai {
+  background-color: #f0eeff;
+  color: #4a28b8;
+  border: 1px solid #c0b0f5;
+}
+
+/* TypeScript — blue (slightly deeper than CSS) */
+.tag-ts {
+  background-color: #dceeff;
+  color: #0c3d8a;
+  border: 1px solid #82b4f0;
+}
+
+/* Tailwind — teal */
+.tag-tailwind {
+  background-color: #e0f7f5;
+  color: #0f6b60;
+  border: 1px solid #6ed4cc;
+}
+
+/* Vue — light green */
+.tag-vue {
+  background-color: #e8f8ee;
+  color: #276843;
+  border: 1px solid #7ed4a0;
+}
